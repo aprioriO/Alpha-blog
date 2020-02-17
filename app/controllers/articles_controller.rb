@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
   def create
     # p params
     @article = Article.new(article_params)
-    @article.user = User.first
+    @article.user = User.first  #to delete after
     if @article.save
       flash[:success] = "Article was successfully created"
       redirect_to article_path(@article)
