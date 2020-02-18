@@ -14,6 +14,7 @@ class ArticlesController < ApplicationController
 
   def create
     # p params
+    # debugger
     @article = Article.new(article_params)
     @article.user = User.first  #to delete after
     if @article.save
