@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   get 'about', to: 'alphablog#about'
 
   resources :articles
+  get 'signup', to: 'users#new'
+  # post 'users', to: 'users#create'
+  # or
+  resources :users, except: [:new]
 end
