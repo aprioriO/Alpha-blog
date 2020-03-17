@@ -76,6 +76,10 @@ $navbar-default-bg: #E8E8E8;
   font-weight: bold;
 }
 
+.input_checkbox input {
+  width: auto !important;
+}
+
 footer {
   margin-top: 1px;
   padding-top: 5px;
